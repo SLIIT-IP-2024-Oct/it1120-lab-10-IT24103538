@@ -7,7 +7,25 @@ import java.util.Scanner;
          System.out.println("ENTER MARKS");
          int mark = scanner.nextInt();
  
-assert(mark>=0&&mark<=100):" Invalid Mark";
+assert(mark>=0 && mark <=100):" Invalid Mark";
  System.out.println("Mark is validated");
+ char grade;
+if (mark>=75){ 
+grade = 'A';
+} else if(mark>=60){
+grade='B';
+}  else if(mark>=50){
+grade='C';
+}  
+else if(mark>=40){
+grade='D';
+}  else{
+grade='F';
+}
+
+assert(grade=='A'||grade == 'B'||grade == 'C'||grade == 'D'||grade == 'F'):"Incorrect Grade Assigned";
+
+System.out.println("The grade for the enter th mark is : "+grade);
+
 }  
 }  
